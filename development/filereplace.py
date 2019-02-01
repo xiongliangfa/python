@@ -12,7 +12,7 @@ os.chdir(fileLOC)
 toBereplaced =['  </span>',' </span> </span>','  </span></span',' </span> </span> </span>']
 replacewith = [' </span>','</span> </span>',' </span></span>',' </span></span></span>']
 
-# driving logic
+# driving logic.
 for file in directory:
     pathname = os.path.join(fileLOC, file)
     if not os.path.isdir(pathname):
