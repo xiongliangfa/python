@@ -27,5 +27,5 @@ for file in directory:
                 write_file = open(file,'w')
                 write_file.write(read_file)
                 print ("processed ", file)
-# code exit logic
+# code exit logic.
 input("Press enter key to exit.")
