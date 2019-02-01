@@ -1,0 +1,32 @@
+body{
+    background: #05668D;
+    color: white;
+    font-family: monospace;
+    border:40px solid #00A896;
+    border-top: 0px;
+    text-align: center;
+    margin:auto;
+}
+
+p{
+    margin-top: 5%;
+    margin-left:15%;
+    margin-right:15%
+}
+.signup{
+    font-weight: bold;
+}
+form{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#sub{
+    background:orangered;
+    color:white;
+    height:70px;
+    width: 150px;
+    font-size: 1em;
+    margin-top: 10px;
+    border-radius: 25px;
+}

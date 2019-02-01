@@ -1,0 +1,28 @@
+.art{
+    margin:auto;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+    color:palevioletred;
+}
+td{
+    height:300px;
+    width:150px;
+    border:2px solid white;
+}
+#one{
+    background:#C4BBB8;
+}
+#two{
+    background:#F5B0CB;
+}
+#three{
+    background:#DC6ACF;
+}
+#four{
+    background:#745C97;
+}
+#five{
+    background:#39375B;
+}
