@@ -1,15 +1,14 @@
 import os, re
 print("Directory-path")
 filePath = input(">")
-re.sub
 fileLOC = filePath.replace("\\\\","\\")
 directory = os.listdir(fileLOC)
 os.chdir(fileLOC)
 # print('Find: ')
-# toBereplaced = input('> ')
+# toBeReplaced = input('> ')
 # print('Replace: ')
 # replaceWith = input('> ')
-toBereplaced =['  </span>',' </span> </span>','  </span></span',' </span> </span> </span>']
+toBeReplaced =['  </span>',' </span> </span>','  </span></span',' </span> </span> </span>']
 replacewith = [' </span>','</span> </span>',' </span></span>',' </span></span></span>']
 
 # driving logic.
@@ -22,7 +21,7 @@ for file in directory:
             print("nav.xhtml skipped")
         else:
             for i in range(0,4):
-                regex = re.compile(toBereplaced[i])
+                regex = re.compile(toBeReplaced[i])
                 read_file = regex.sub(replacewith[i], read_file)
                 write_file = open(file,'w')
                 write_file.write(read_file)
