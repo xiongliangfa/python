@@ -2,12 +2,12 @@ from tkinter import *
 from tkinter import messagebox
 import os,re
 win = Tk()
-win.title('B&T Word Search Tool v1.1')
+win.title('B&T Word Search Tool v1.2')
 mystring = StringVar()
 def getValue():
     # address = mystring.get()
     # messagebox.showinfo("Processed",address)
-    print("Directory-path")
+    # print("Directory-path")
     filePath = mystring.get()
     fileLOC = filePath.replace("\\\\","\\")
     directory = os.listdir(fileLOC)
@@ -16,8 +16,8 @@ def getValue():
     # toBeReplaced = input('> ')
     # print('Replace: ')
     # replaceWith = input('> ')
-    toBeReplaced =['</span></span>','  </span>',' </span> </span>','  </span></span>',' </span> </span> </span>']
-    replacewith = ['</span> </span>',' </span>','</span> </span>',' </span></span>',' </span></span></span>']
+    toBeReplaced =['</span></span>','  </span>',' </span> </span>','  </span></span>',' </span> </span> </span>','-</span> </span>']
+    replacewith = ['</span> </span>',' </span>','</span> </span>',' </span></span>',' </span></span></span>','-</span></span>']
 
     # driving logic.
     for file in directory:
@@ -26,7 +26,8 @@ def getValue():
             open_file = open(file,'r',encoding='utf-8')
             read_file = open_file.read()
             if file == 'nav.xhtml':
-                print("nav.xhtml skipped")
+                # print("nav.xhtml skipped")
+                continue
             else:
                 for i in range(0,4):
                     try:
@@ -34,9 +35,10 @@ def getValue():
                         read_file = regex.sub(replacewith[i], read_file)
                         write_file = open(file,'w',encoding='utf-8')
                         write_file.write(read_file)
-                        print ("processed ", file)
+                        # print ("processed ", file)
                     except:
-                        print("exception occurred.")
+                        # print("exception occurred.")
+                        messagebox.showinfo("Error", "Exception occurred")                
     # code exit logic.
     messagebox.showinfo("Processed", "Files Processed")
 
