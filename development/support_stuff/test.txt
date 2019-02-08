@@ -1,8 +1,0 @@
-1. https://pd-jira.k12.com/browse/KVAIIY-300563 (for flipcard)
-Preview Link: http://121.241.115.104/CAT/PreviewPage.php?config=/CAT/users/drattan\Demo\Flipcard/config.json&assets=/CAT/users/drattan\Demo\Flipcard/assets/&layout=L&subject=Generic&grade=6,7,8,9,10,11,12&wrapper=none (client url)
-
-2. https://pd-jira.k12.com/browse/KVAIIY-258238 (for gallery)
-Preview Link: http://121.241.115.104/CAT/PreviewPage.php?config=/CAT/users/drattan\Demo\Image_Gallery/config.json&assets=/CAT/users/drattan\Demo\Image_Gallery/assets/&layout=G&subject=Generic&grade=6,7,8,9,10,11,12&wrapper=none (client url)
-
-3. https://pd-jira.k12.com/browse/KVAIIY-69838 (hotspot and DnD)
-Preview Link: http://121.241.115.104/CAT/PreviewPage.php?config=/CAT/users/drattan/Demo/Hotspot_DnD/config.json&assets=/CAT/users/drattan/Demo/Hotspot_DnD/assets/&layout=F&subject=Generic&grade=6,7,8,9,10,11,12&wrapper=none (client url)

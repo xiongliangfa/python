@@ -1,0 +1,42 @@
+.tr12{
+ color:transparent;
+}
+#P12_1{
+left:612.7px;bottom:62.4px;letter-spacing:0.9px;color:rgb(35,31,31);rightpos:625.3px;fontSize:24.3px;isVertical:False;
+}
+#P12_2{
+left:124.9px;bottom:966.3px;color:rgb(35,31,31);rightpos:562.5px;fontSize:31.2px;isVertical:False;
+}
+#P12_3{
+left:124.9px;bottom:922.9px;color:rgb(35,31,31);rightpos:519.2px;fontSize:31.2px;isVertical:False;
+}
+#P12_4{
+left:124.9px;bottom:879.6px;color:rgb(35,31,31);rightpos:588.8px;fontSize:31.2px;isVertical:False;
+}
+#P12_5{
+left:124.9px;bottom:836.2px;color:rgb(35,31,31);rightpos:206.3px;fontSize:31.2px;isVertical:False;
+}
+#P12_6{
+left:206.3px;bottom:836.7px;letter-spacing:-0.7px;color:rgb(35,31,31);rightpos:295.8px;fontSize:31.2px;isVertical:False;
+}
+#P12_7{
+left:304.3px;bottom:836.2px;letter-spacing:-0.6px;color:rgb(35,31,31);rightpos:356.2px;fontSize:31.2px;isVertical:False;
+}
+#P12_8{
+left:124.9px;bottom:59.4px;color:rgb(35,31,31);rightpos:254.2px;fontSize:13.9px;isVertical:False;
+}
+#PageContainer12{
+width:687.5px;height:1062.5px;background-image: url("../images/page0012.jpg");background-repeat:no-repeat;background-size: 687px 1062px; background-position: right bottom;
+}
+#ImageContainer012_00 {
+bottom:-0.00px;right:0.00px;width:687.50px;height:1062.50px;position:absolute;
+}
+#page0012_para1{
+left:125px; bottom:836px; color:rgb(35,31,31); line-height:40px;
+}
+#page0012_para2{
+left:125px; bottom:59px; color:rgb(35,31,31); line-height:14px;
+}
+#page0012_para3{
+left:613px; bottom:62px; color:rgb(35,31,31); line-height:24px;
+}

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">The Earth Pot</dc:title>
+    <meta property="dcterms:title" id="dcterms-title">The Earth Pot</meta>
+    <dc:creator id="creator">author name</dc:creator>
+    <dc:source id="src-id">urn:isbn:</dc:source>
+    <dc:identifier id="pub-id">LAZ book</dc:identifier>
+    <dc:subject>subject info</dc:subject>
+    <dc:subject>subject info</dc:subject>
+    <dc:publisher id="publisher">Learning A-Z</dc:publisher>
+    <dc:language>en-US</dc:language>
+    <meta property="dcterms:modified">2013-01-13T01:13:00Z</meta>
+    <meta name="cover" content="jpg_cover" />
+    <meta property="media:active-class">-epub-media-overlay-active</meta>
+    <meta property="media:duration">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0002">17:40</meta>
+    <meta property="media:duration" refines="#smil_page0003">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0004">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0005">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0006">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0007">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0008">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0009">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0010">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0011">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0012">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0013">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0014">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0015">00:00</meta>
+    <meta property="media:duration" refines="#smil_page0017">00:00</meta>
+    <meta property="rendition:layout">pre-paginated</meta>
+    <meta property="rendition:orientation">auto</meta>
+    <meta property="rendition:spread">both</meta>
+  </metadata>
+  <manifest>
+    <item id="xhtml_page0001" href="page0001.xhtml" media-type="application/xhtml+xml" />
+    <item id="xhtml_page0002" href="page0002.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0002" />
+    <item id="xhtml_page0003" href="page0003.xhtml" media-type="application/xhtml+xml" />
+    <item id="xhtml_page0004" href="page0004.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0003" />
+    <item id="xhtml_page0005" href="page0005.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0004" />
+    <item id="xhtml_page0006" href="page0006.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0005" />
+    <item id="xhtml_page0007" href="page0007.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0006" />
+    <item id="xhtml_page0008" href="page0008.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0007" />
+    <item id="xhtml_page0009" href="page0009.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0008" />
+    <item id="xhtml_page0010" href="page0010.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0009" />
+    <item id="xhtml_page0011" href="page0011.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0010" />
+    <item id="xhtml_page0012" href="page0012.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0011" />
+    <item id="xhtml_page0013" href="page0013.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0012" />
+    <item id="xhtml_page0014" href="page0014.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0013" />
+    <item id="xhtml_page0015" href="page0015.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0014" />
+    <item id="xhtml_page0016" href="page0016.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0015"/>
+    <item id="xhtml_page0017" href="page0017.xhtml" media-type="application/xhtml+xml" />
+    <item id="xhtml_page0018" href="page0018.xhtml" media-type="application/xhtml+xml" media-overlay="smil_page0017" />
+    <item id="ncx_toc" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="xhtml_toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
+    <item id="smil_page0002" href="smil/page0002.smil" media-type="application/smil+xml" />
+    <item id="smil_page0003" href="smil/page0003.smil" media-type="application/smil+xml" />
+    <item id="smil_page0004" href="smil/page0004.smil" media-type="application/smil+xml" />
+    <item id="smil_page0005" href="smil/page0005.smil" media-type="application/smil+xml" />
+    <item id="smil_page0006" href="smil/page0006.smil" media-type="application/smil+xml" />
+    <item id="smil_page0007" href="smil/page0007.smil" media-type="application/smil+xml" />
+    <item id="smil_page0008" href="smil/page0008.smil" media-type="application/smil+xml" />
+    <item id="smil_page0009" href="smil/page0009.smil" media-type="application/smil+xml" />
+    <item id="smil_page0010" href="smil/page0010.smil" media-type="application/smil+xml" />
+    <item id="smil_page0011" href="smil/page0011.smil" media-type="application/smil+xml" />
+    <item id="smil_page0012" href="smil/page0012.smil" media-type="application/smil+xml" />
+    <item id="smil_page0013" href="smil/page0013.smil" media-type="application/smil+xml" />
+    <item id="smil_page0014" href="smil/page0014.smil" media-type="application/smil+xml" />
+    <item id="smil_page0015" href="smil/page0015.smil" media-type="application/smil+xml" />
+    <item id="smil_page0017" href="smil/page0017.smil" media-type="application/smil+xml" />
+    <item id="jpg_cover35" href="images/cover.jpg" media-type="image/jpeg" />
+    <item id="png_crop_page0018_136" href="images/crop_page0018_1.png" media-type="image/png" />
+    <item id="jpg_page000137" href="images/page0001.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000238" href="images/page0002.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000339" href="images/page0003.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000440" href="images/page0004.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000541" href="images/page0005.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000642" href="images/page0006.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000743" href="images/page0007.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000844" href="images/page0008.jpg" media-type="image/jpeg" />
+    <item id="jpg_page000945" href="images/page0009.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001046" href="images/page0010.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001147" href="images/page0011.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001248" href="images/page0012.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001349" href="images/page0013.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001450" href="images/page0014.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001551" href="images/page0015.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001652" href="images/page0016.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001753" href="images/page0017.jpg" media-type="image/jpeg" />
+    <item id="jpg_page001854" href="images/page0018.jpg" media-type="image/jpeg" />
+    <item id="otf_f0generic55" href="fonts/f0generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f10generic56" href="fonts/f10generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f11generic57" href="fonts/f11generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f12generic58" href="fonts/f12generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f13generic59" href="fonts/f13generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f14generic60" href="fonts/f14generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f15generic61" href="fonts/f15generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f16generic62" href="fonts/f16generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f17generic63" href="fonts/f17generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f18generic64" href="fonts/f18generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f19generic65" href="fonts/f19generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f1generic66" href="fonts/f1generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f20generic67" href="fonts/f20generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f21generic68" href="fonts/f21generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f22generic69" href="fonts/f22generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f23generic70" href="fonts/f23generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f24generic71" href="fonts/f24generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f25generic72" href="fonts/f25generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f26generic73" href="fonts/f26generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f27generic74" href="fonts/f27generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f28generic75" href="fonts/f28generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f29generic76" href="fonts/f29generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f2generic77" href="fonts/f2generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f30generic78" href="fonts/f30generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f31generic79" href="fonts/f31generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f32generic80" href="fonts/f32generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f33generic81" href="fonts/f33generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f34generic82" href="fonts/f34generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f35generic83" href="fonts/f35generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f36generic84" href="fonts/f36generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f37generic85" href="fonts/f37generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f38generic86" href="fonts/f38generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f39generic87" href="fonts/f39generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f3generic88" href="fonts/f3generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f40generic89" href="fonts/f40generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f41generic90" href="fonts/f41generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f42generic91" href="fonts/f42generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f43generic92" href="fonts/f43generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f44generic93" href="fonts/f44generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f45generic94" href="fonts/f45generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f46generic95" href="fonts/f46generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f47generic96" href="fonts/f47generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f48generic97" href="fonts/f48generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f49generic98" href="fonts/f49generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f4generic99" href="fonts/f4generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f50generic100" href="fonts/f50generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f51generic101" href="fonts/f51generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f52generic102" href="fonts/f52generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f53generic103" href="fonts/f53generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f54generic104" href="fonts/f54generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f55generic105" href="fonts/f55generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f56generic106" href="fonts/f56generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f57generic107" href="fonts/f57generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f58generic108" href="fonts/f58generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f59generic109" href="fonts/f59generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f5generic110" href="fonts/f5generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f60generic111" href="fonts/f60generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f61generic112" href="fonts/f61generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f62generic113" href="fonts/f62generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f63generic114" href="fonts/f63generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f64generic115" href="fonts/f64generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f65generic116" href="fonts/f65generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f66generic117" href="fonts/f66generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f67generic118" href="fonts/f67generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f6generic119" href="fonts/f6generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f7generic120" href="fonts/f7generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f8generic121" href="fonts/f8generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="otf_f9generic122" href="fonts/f9generic.otf" media-type="application/vnd.ms-opentype" />
+    <item id="css_common123" href="css/common.css" media-type="text/css" />
+    <item id="css_page0001124" href="css/page0001.css" media-type="text/css" />
+    <item id="css_page0002125" href="css/page0002.css" media-type="text/css" />
+    <item id="css_page0003126" href="css/page0003.css" media-type="text/css" />
+    <item id="css_page0004127" href="css/page0004.css" media-type="text/css" />
+    <item id="css_page0005128" href="css/page0005.css" media-type="text/css" />
+    <item id="css_page0006129" href="css/page0006.css" media-type="text/css" />
+    <item id="css_page0007130" href="css/page0007.css" media-type="text/css" />
+    <item id="css_page0008131" href="css/page0008.css" media-type="text/css" />
+    <item id="css_page0009132" href="css/page0009.css" media-type="text/css" />
+    <item id="css_page0010133" href="css/page0010.css" media-type="text/css" />
+    <item id="css_page0011134" href="css/page0011.css" media-type="text/css" />
+    <item id="css_page0012135" href="css/page0012.css" media-type="text/css" />
+    <item id="css_page0013136" href="css/page0013.css" media-type="text/css" />
+    <item id="css_page0014137" href="css/page0014.css" media-type="text/css" />
+    <item id="css_page0015138" href="css/page0015.css" media-type="text/css" />
+    <item id="css_page0016139" href="css/page0016.css" media-type="text/css" />
+    <item id="css_page0017140" href="css/page0017.css" media-type="text/css" />
+    <item id="css_page0018141" href="css/page0018.css" media-type="text/css" />
+    <item id="mp3_raz_theemptypot_lk29_p10_text142" href="audio/raz_theemptypot_lk29_p10_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p11_text143" href="audio/raz_theemptypot_lk29_p11_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p12_text144" href="audio/raz_theemptypot_lk29_p12_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p13_text145" href="audio/raz_theemptypot_lk29_p13_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p14_text146" href="audio/raz_theemptypot_lk29_p14_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p15_text147" href="audio/raz_theemptypot_lk29_p15_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p17_side148" href="audio/raz_theemptypot_lk29_p17_side.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p3_text149" href="audio/raz_theemptypot_lk29_p3_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p4_text150" href="audio/raz_theemptypot_lk29_p4_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p5_text151" href="audio/raz_theemptypot_lk29_p5_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p6_text152" href="audio/raz_theemptypot_lk29_p6_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p7_text153" href="audio/raz_theemptypot_lk29_p7_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p8_text154" href="audio/raz_theemptypot_lk29_p8_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_p9_text155" href="audio/raz_theemptypot_lk29_p9_text.mp3" media-type="audio/mpeg" />
+    <item id="mp3_raz_theemptypot_lk29_title_text156" href="audio/raz_theemptypot_lk29_title_text.mp3" media-type="audio/mpeg" />
+  </manifest>
+  <spine toc="ncx_toc">
+    <itemref linear="yes" idref="xhtml_page0001" />
+    <itemref linear="yes" idref="xhtml_page0002" />
+    <itemref linear="yes" idref="xhtml_page0003" />
+    <itemref linear="yes" idref="xhtml_page0004" />
+    <itemref linear="yes" idref="xhtml_page0005" />
+    <itemref linear="yes" idref="xhtml_page0006" />
+    <itemref linear="yes" idref="xhtml_page0007" />
+    <itemref linear="yes" idref="xhtml_page0008" />
+    <itemref linear="yes" idref="xhtml_page0009" />
+    <itemref linear="yes" idref="xhtml_page0010" />
+    <itemref linear="yes" idref="xhtml_page0011" />
+    <itemref linear="yes" idref="xhtml_page0012" />
+    <itemref linear="yes" idref="xhtml_page0013" />
+    <itemref linear="yes" idref="xhtml_page0014" />
+    <itemref linear="yes" idref="xhtml_page0015" />
+    <itemref linear="yes" idref="xhtml_page0016" />
+    <itemref linear="yes" idref="xhtml_page0017" />
+    <itemref linear="yes" idref="xhtml_page0018" />
+  </spine>
+</package>
