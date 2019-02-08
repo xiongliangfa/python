@@ -1,0 +1,2 @@
+Audio merging
+SOX firstaudio.mp3 secondaudio.mp3 mergedaudio.mp3

@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id-1">
+      <text src="./page0010.xhtml#word1" />
+      <audio clipBegin="0.000000" clipEnd="0.287280" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--He-->
+    <par id="id-2">
+      <text src="./page0010.xhtml#word2" />
+      <audio clipBegin="0.287280" clipEnd="0.843001" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--kept-->
+    <par id="id-3">
+      <text src="./page0010.xhtml#word3" />
+      <audio clipBegin="0.843001" clipEnd="1.236245" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--his-->
+    <par id="id-4">
+      <text src="./page0010.xhtml#word4" />
+      <audio clipBegin="1.236245" clipEnd="1.657746" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--pet-->
+    <par id="id-5">
+      <text src="./page0010.xhtml#word5" />
+      <audio clipBegin="1.657746" clipEnd="2.439523" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--cricket-->
+    <par id="id-6">
+      <text src="./page0010.xhtml#word6" />
+      <audio clipBegin="2.439523" clipEnd="3.087080" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--next-->
+    <par id="id-7">
+      <text src="./page0010.xhtml#word7" />
+      <audio clipBegin="3.089435" clipEnd="3.287234" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--to-->
+    <par id="id-8">
+      <text src="./page0010.xhtml#word8" />
+      <audio clipBegin="3.287234" clipEnd="3.466195" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--the-->
+    <par id="id-9">
+      <text src="./page0010.xhtml#word9" />
+      <audio clipBegin="3.466195" clipEnd="4.342163" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--pot.-->
+    <par id="id-10">
+      <text src="./page0010.xhtml#word10" />
+      <audio clipBegin="4.342163" clipEnd="5.133360" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--He-->
+    <par id="id-11">
+      <text src="./page0010.xhtml#word11" />
+      <audio clipBegin="5.133360" clipEnd="5.651405" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--wanted-->
+    <par id="id-12">
+      <text src="./page0010.xhtml#word12" />
+      <audio clipBegin="5.651405" clipEnd="5.795045" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--the-->
+    <par id="id-13">
+      <text src="./page0010.xhtml#word13" />
+      <audio clipBegin="5.795045" clipEnd="6.419054" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--seed-->
+    <par id="id-14">
+      <text src="./page0010.xhtml#word14" />
+      <audio clipBegin="6.419054" clipEnd="6.720463" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--to-->
+    <par id="id-15">
+      <text src="./page0010.xhtml#word15" />
+      <audio clipBegin="6.720463" clipEnd="7.203187" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--hear-->
+    <par id="id-16">
+      <text src="./page0010.xhtml#word16" />
+      <audio clipBegin="7.203187" clipEnd="7.424534" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--the-->
+    <par id="id-17">
+      <text src="./page0010.xhtml#word17" />
+      <audio clipBegin="7.424534" clipEnd="8.135669" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--cricket’s-->
+    <par id="id-18">
+      <text src="./page0010.xhtml#word18" />
+      <audio clipBegin="8.135669" clipEnd="8.731421" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--sweet-->
+    <par id="id-19">
+      <text src="./page0010.xhtml#word19" />
+      <audio clipBegin="8.731421" clipEnd="10.245527" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--sounds.-->
+    <par id="id-20">
+      <text src="./page0010.xhtml#word20" />
+      <audio clipBegin="10.245527" clipEnd="11.672507" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--Seasons-->
+    <par id="id-21">
+      <text src="./page0010.xhtml#word21" />
+      <audio clipBegin="11.672507" clipEnd="12.720371" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--passed,-->
+    <par id="id-22">
+      <text src="./page0010.xhtml#word22" />
+      <audio clipBegin="12.720371" clipEnd="13.024134" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--but-->
+    <par id="id-23">
+      <text src="./page0010.xhtml#word23" />
+      <audio clipBegin="13.024134" clipEnd="13.306705" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--the-->
+    <par id="id-24">
+      <text src="./page0010.xhtml#word24" />
+      <audio clipBegin="13.306705" clipEnd="13.582211" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--little-->
+    <par id="id-25">
+      <text src="./page0010.xhtml#word25" />
+      <audio clipBegin="13.582211" clipEnd="14.354569" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--seed-->
+    <par id="id-26">
+      <text src="./page0010.xhtml#word26" />
+      <audio clipBegin="14.354569" clipEnd="15.056285" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--still-->
+    <par id="id-27">
+      <text src="./page0010.xhtml#word27" />
+      <audio clipBegin="15.056285" clipEnd="15.809806" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--didn’t-->
+    <par id="id-28">
+      <text src="./page0010.xhtml#word28" />
+      <audio clipBegin="15.809806" clipEnd="16.485620" src="./audio/raz_theemptypot_lk29_p9_text.mp3" />
+    </par>
+    <!--sprout.-->
+  </body>
+</smil>

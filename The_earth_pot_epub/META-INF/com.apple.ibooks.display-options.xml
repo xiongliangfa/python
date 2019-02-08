@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display_options>
+<!-- Supported values for platform name: "*", "iphone", "ipad"; "iphone" applies to ipod
+touch as well; note all-lowercase -->
+<platform name="*">
+<!-- allowed values for "fixed-layout" are either "true" or "false" (with "false" as the
+default when unspecified) -->
+<option name="fixed-layout">true</option>
+</platform>
+</display_options>

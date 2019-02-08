@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+<body>
+<par id="id-1"><text src="./page0011.xhtml#word1"/><audio clipBegin="0.04" clipEnd="0.73" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--Children[]-->
+<par id="id-2"><text src="./page0011.xhtml#word2"/><audio clipBegin="0.73" clipEnd="1.28" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--came[]-->
+<par id="id-3"><text src="./page0011.xhtml#word3"/><audio clipBegin="1.29" clipEnd="1.48" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--to[]-->
+<par id="id-4"><text src="./page0011.xhtml#word4"/><audio clipBegin="1.48" clipEnd="1.67" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--the[]-->
+<par id="id-5"><text src="./page0011.xhtml#word5"/><audio clipBegin="1.67" clipEnd="2.39" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--emperor's[]-->
+<par id="id-6"><text src="./page0011.xhtml#word6"/><audio clipBegin="2.4" clipEnd="3.06" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--palace[]-->
+<par id="id-7"><text src="./page0011.xhtml#word7"/><audio clipBegin="3.26" clipEnd="3.55" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--with[]-->
+<par id="id-8"><text src="./page0011.xhtml#word8"/><audio clipBegin="3.55" clipEnd="3.74" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--their[]-->
+<par id="id-9"><text src="./page0011.xhtml#word9"/><audio clipBegin="3.74" clipEnd="4.49" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--pots[]-->
+<par id="id-10"><text src="./page0011.xhtml#word10"/><audio clipBegin="4.5" clipEnd="5.05" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--full[]-->
+<par id="id-11"><text src="./page0011.xhtml#word11"/><audio clipBegin="5.06" clipEnd="5.27" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--of[]-->
+<par id="id-12"><text src="./page0011.xhtml#word12"/><audio clipBegin="5.27" clipEnd="6.05" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--flowers[]-->
+<par id="id-13"><text src="./page0011.xhtml#word13"/><audio clipBegin="7.14" clipEnd="7.77" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--Chen[]-->
+<par id="id-14"><text src="./page0011.xhtml#word14"/><audio clipBegin="7.87" clipEnd="8.33" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--looked[]-->
+<par id="id-15"><text src="./page0011.xhtml#word15"/><audio clipBegin="8.34" clipEnd="8.76" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--down[]-->
+<par id="id-16"><text src="./page0011.xhtml#word16"/><audio clipBegin="8.76" clipEnd="9.6" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--sadly[]-->
+<par id="id-17"><text src="./page0011.xhtml#word17"/><audio clipBegin="9.63" clipEnd="9.87" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--at[]-->
+<par id="id-18"><text src="./page0011.xhtml#word18"/><audio clipBegin="9.87" clipEnd="10.26" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--his[]-->
+<par id="id-19"><text src="./page0011.xhtml#word19"/><audio clipBegin="10.27" clipEnd="10.86" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--empty[]-->
+<par id="id-20"><text src="./page0011.xhtml#word20"/><audio clipBegin="10.87" clipEnd="11.35" src="../audio/raz_theemptypot_lk29_p11_text.mp3"/></par><!--pot[]-->
+</body>
+</smil>

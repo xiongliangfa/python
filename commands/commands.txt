@@ -1,0 +1,3 @@
+create descriptor from CMD
+dir /s/b *.* > Descriptor.txt
+
