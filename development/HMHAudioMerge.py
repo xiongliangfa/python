@@ -41,14 +41,14 @@ def addToArray(filePath):
     
 
 # func to convert mp3 to wav
-def toWav(filePath):
-    os.mkdir('output')
-    os.chdir(filePath)
-    for i in range(0,len(file_list)):
-        audio = os.path.splitext(file_list[i])[0]
-        inputStr = ''.join([audio,'.mp3'])
-        outputStr = ''.join(['/output/',audio,'.wav'])
-        AudioSegment.from_mp3(inputStr).export(outputStr, format="wav")
+# def toWav(filePath):
+#     os.mkdir('output')
+#     os.chdir(filePath)
+#     for i in range(0,len(file_list)):
+#         audio = os.path.splitext(file_list[i])[0]
+#         inputStr = ''.join([audio,'.mp3'])
+#         outputStr = ''.join(['/output/',audio,'.wav'])
+#         AudioSegment.from_mp3(inputStr).export(outputStr, format="wav")
     # os.chdir(filePath)
     # for i in range(1,len(file_list)):
     #     audio = os.path.splitext(file_list[i])[0]
@@ -59,9 +59,9 @@ def toWav(filePath):
         
 if __name__ == "__main__":
     print('Enter the directory')
-    filePath = input(">")
+    filePath = input(">")   
     addToArray(filePath)
-    toWav(filePath)
+    # toWav(filePath)
     file = open('log.txt','w')
     for i in range(0,len(file_list),2):
         outputAudio = SpeechToText(file_list[i])
