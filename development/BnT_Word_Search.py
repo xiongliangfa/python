@@ -1,9 +1,13 @@
 from tkinter import *
 from tkinter import messagebox
 import os,re
+
+#global declaration
 win = Tk()
-win.title('B&T Word Search Tool v1.2')
+win.title('B&T Word Search Tool v1.2 - Follett')
 mystring = StringVar()
+
+
 def getValue():
     # address = mystring.get()
     # messagebox.showinfo("Processed",address)
@@ -26,25 +30,27 @@ def getValue():
             open_file = open(file,'r',encoding='utf-8')
             read_file = open_file.read()
             if file == 'nav.xhtml':
-                # print("nav.xhtml skipped")
+                print("nav.xhtml skipped")
                 continue
             else:
-                for i in range(0,4):
+                for i in range(0,5):
                     try:
                         regex = re.compile(toBeReplaced[i])
                         read_file = regex.sub(replacewith[i], read_file)
                         write_file = open(file,'w',encoding='utf-8')
                         write_file.write(read_file)
-                        # print ("processed ", file)
                     except:
                         # print("exception occurred.")
-                        messagebox.showinfo("Error", "Exception occurred")                
+                        messagebox.showinfo("Error", "Exception occurred")
+        print ("processed ", file)              
     # code exit logic.
     messagebox.showinfo("Processed", "Files Processed")
 
-Label(win, text="Text to get").pack()  #label
-Entry(win, textvariable = mystring,width=50).pack() #textblock
-button = Button(win, text="Proceed", command=getValue) #button
-button.pack()
-win.geometry("600x300+500+250")
-win.mainloop()
+
+if __name__ == "__main__":
+    Label(win, text="Enter OPS path").pack()  #label
+    Entry(win, textvariable = mystring,width=50).pack() #textblock
+    button = Button(win, text="Proceed", command=getValue) #button
+    button.pack()
+    win.geometry("600x300+500+250")
+    win.mainloop()
