@@ -41,8 +41,22 @@ def addToArray(filePath):
     os.chdir(filePath)
     for file in directory:
         file_list.append(file)
-    
-        
+
+# # adding silence
+# def addSilence(aud1):
+#     infiles = [aud1, 'silence.wav']
+#     outfile = aud1
+#     data= []
+#     for infile in infiles:
+#         w = wave.open(infile, 'rb')
+#         data.append( [w.getparams(), w.readframes(w.getnframes())] )
+#         w.close()
+#     output = wave.open(outfile, 'wb')
+#     output.setparams(data[0][0])
+#     output.writeframes(data[0][1])
+#     output.writeframes(data[1][1])
+#     output.close()
+
 if __name__ == "__main__":
     print('Enter the directory')
     filePath = input(">")   
@@ -51,7 +65,8 @@ if __name__ == "__main__":
     file = open('log.txt','w')
     for i in range(0,len(file_list),2):
         outputAudio = SpeechToText(file_list[i],i)
+        # addSilence(file_list[i])
         mergeAudio(file_list[i],file_list[i+1],outputAudio)
         print(outputAudio,' Created')
-        file.write(file_list[i] + ' + ' + file_list[i+1] +' --> ' +outputAudio + '\n')
+        file.write(file_list[i] + ' + ' + file_list[i+1] +' --> ' + outputAudio + '\n')
     file.close()

@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['HMHAudioMerge.py'],
-             pathex=['F:\\python\\development'],
+             pathex=['D:\\PYTHON\\python\\development'],
              binaries=[],
              datas=[],
              hiddenimports=[],

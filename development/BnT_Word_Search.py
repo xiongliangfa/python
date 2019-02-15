@@ -4,7 +4,7 @@ import os,re
 
 #global declaration
 win = Tk()
-win.title('B&T Word Search Tool v1.2 - Follett')
+win.title('B&T Word Search Tool v1.3 - Follett')
 mystring = StringVar()
 
 
