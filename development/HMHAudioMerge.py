@@ -4,12 +4,15 @@ import wave,os
 import pydub
 from tkinter import *
 from tkinter import messagebox
+import tkinter as tk
 
 # global deceleration
 file_list = []
 win = Tk()
 win.title('Audio Merge tool V2.1 - HMH')
 mystring = StringVar()
+audioLabel = StringVar()
+countLabel = StringVar()
 
 #func to merge the audio
 def mergeAudio(aud1,aud2,outputAudio):
@@ -48,7 +51,7 @@ def addToArray(filePath):
     for file in directory:
         file_list.append(file)
 
-# # adding silence
+#  adding silence
 def addSilence(aud1):
     infiles = [aud1, 'silence\\silence.wav']
     outfile = aud1
@@ -63,24 +66,53 @@ def addSilence(aud1):
     output.writeframes(data[1][1])
     output.close()
 
+# mp3 to wav function
+def toWav(filePath):
+    pass
+
+# wav to mp3 function
+def tomp3(filePath):
+    pass
+
+# triggering function
 def trigger():
     filePath = mystring.get()  
     addToArray(filePath)
-    # toWav(filePath)
+    toWav(filePath) #yet to be implemented
     file = open('log.txt','w')
     for i in range(0,len(file_list),2):
         if not file_list[i] == 'silence':
+            audioLabel.set('')
+            countLabel.set('')
+            win.update_idletasks()
             outputAudio = SpeechToText(file_list[i],i)
             addSilence(file_list[i])
             mergeAudio(file_list[i],file_list[i+1],outputAudio)
-            print(outputAudio,' Created')
+            # print(outputAudio,' Created')
+            audioLabel.set(outputAudio + ' Created')
+            if i==0:
+                countLabel.set('1')
+            else:
+                countLabel.set(i/2)
+            win.update_idletasks()
+            # count.update(text = i/2)
             file.write(file_list[i] + ' + ' + file_list[i+1] +' --> ' + outputAudio + '\n')
     file.close()
+    tomp3(filePath) #yet to be implemented
 
 if __name__ == "__main__":
-    Label(win, text="Enter Audio Path").pack()  #label
+    audioLabel.set('Audio to be generated')
+    countLabel.set('0')
+    Label(win, text="").pack()  #label
+    Label(win, text="Enter Audio Path", justify=LEFT).pack()  #label
     Entry(win, textvariable = mystring,width=50).pack() #textblock
     button = Button(win, text="Proceed", command=trigger) #button
     button.pack()
-    win.geometry("600x300+500+250")
+    audioTag = tk.Label(win, textvariable=audioLabel, justify = LEFT)
+    audioTag.pack()
+    audioMerged = tk.Label(win, text = "Audios merged : ")
+    audioMerged.pack()
+    count = tk.Label(win, textvariable = countLabel)
+    count.pack()
+    win.geometry("350x150+500+250")
     win.mainloop()
