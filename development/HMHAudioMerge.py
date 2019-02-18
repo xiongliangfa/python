@@ -82,20 +82,10 @@ def trigger():
     file = open('log.txt','w')
     for i in range(0,len(file_list),2):
         if not file_list[i] == 'silence':
-            audioLabel.set('')
-            countLabel.set('')
             win.update_idletasks()
             outputAudio = SpeechToText(file_list[i],i)
             addSilence(file_list[i])
             mergeAudio(file_list[i],file_list[i+1],outputAudio)
-            # print(outputAudio,' Created')
-            audioLabel.set(outputAudio + ' Created')
-            if i==0:
-                countLabel.set('1')
-            else:
-                countLabel.set(i/2)
-            win.update_idletasks()
-            # count.update(text = i/2)
             file.write(file_list[i] + ' + ' + file_list[i+1] +' --> ' + outputAudio + '\n')
     file.close()
     tomp3(filePath) #yet to be implemented
@@ -108,11 +98,5 @@ if __name__ == "__main__":
     Entry(win, textvariable = mystring,width=50).pack() #textblock
     button = Button(win, text="Proceed", command=trigger) #button
     button.pack()
-    audioTag = tk.Label(win, textvariable=audioLabel, justify = LEFT)
-    audioTag.pack()
-    audioMerged = tk.Label(win, text = "Audios merged : ")
-    audioMerged.pack()
-    count = tk.Label(win, textvariable = countLabel)
-    count.pack()
     win.geometry("350x150+500+250")
     win.mainloop()
