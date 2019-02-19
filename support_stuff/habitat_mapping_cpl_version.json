@@ -1,0 +1,38 @@
+{
+  "ActivityTitle": "Write",
+  "QuestionStem": "Now describe how the boy’s sister changes.&nbsp; <b>Remember to:</b> Tell what the character says and does at the beginning and end of the story. Use describing words.",
+  "Tip": "",
+  "Summary": "",
+  "no-SampleAnswer": "",
+  "SampleAnswer": "",
+  "InstructionText": "Write here.",
+  "no-InstructionText": "",
+  "qtype": "box",
+  "AudioFromRCE": false,
+  "AllowAudio": true,
+  "AllowFullScreen": true,
+  "AllowRefresh": true,
+  "isPracticeInteraction": false,
+  "ShowToolbar": "false",
+  "ShowCharacterCount": "false",
+  "SampleAnswerMode": "none",
+  "MaxCharacterLimit": "500",
+  "Stimulus": {
+    "text": {
+      "src": ""
+    },
+    "image": {
+      "src": "",
+      "altText": "",
+      "credits": ""
+    },
+    "audio": {
+      "src": "",
+      "caption": "",
+      "credit": ""
+    },
+    "video": {
+      "src": ""
+    }
+  }
+}

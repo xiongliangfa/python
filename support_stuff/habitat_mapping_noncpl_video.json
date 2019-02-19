@@ -1,0 +1,29 @@
+{
+  "array_a": [
+    {
+      "title": "Models of the Solar System",
+      "intro": "Ptolemy’s model of the universe was accepted for about 1,400 years. But later astronomers came up with new models to show the relationship between Earth, the sun, and other planets.",
+      "instruct": "Use the Play arrow to watch the animation."
+    },
+    [
+      {
+        "caption": "off",
+        "video_title_label": "video_title",
+        "video_title": "Models of the Solar System",
+        "video_lable": "",
+        "video_id": "ref:ms_wc_ani_solar",
+        "video_type": "animation",
+        "start_time": 0,
+        "end_time": 0,
+        "video_length": "",
+        "video_caption": "",
+        "video_history_logo": true,
+        "poster_history_logo": true,
+        "thumb_image_url": "../../../img/module_22_lesson02/ms_snlese673519_solarsystems_ani_poster.jpg ",
+        "poster_image_url": "../../../img/module_22_lesson02/ms_snlese673519_solarsystems_ani_poster.jpg ",
+        "thumb_image_alt": "",
+        "poster_image_alt": ""
+      }
+    ]
+  ]
+}
