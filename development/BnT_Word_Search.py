@@ -20,36 +20,37 @@ def getValue():
     # toBeReplaced = input('> ')
     # print('Replace: ')
     # replaceWith = input('> ')
-    toBeReplaced =['</span></span>','  </span>',' </span> </span>','  </span></span>',' </span> </span> </span>','-</span> </span>']
-    replacewith = ['</span> </span>',' </span>','</span> </span>',' </span></span>',' </span></span></span>','-</span></span>']
+    toBeReplaced = ['</span></span>', '  </span>', ' </span> </span>', '  </span></span>', ' </span> </span> </span>', '-</span> </span>']
+    replacewith = ['</span> </span>', ' </span>', '</span> </span>', ' </span></span>', ' </span></span></span>', '-</span></span>']
+    print(replacewith[5])
 
     # driving logic.
     for file in directory:
         pathname = os.path.join(fileLOC, file)
         if not os.path.isdir(pathname):
-            open_file = open(file,'r',encoding='utf-8')
+            open_file = open(file, 'r', encoding='utf-8')
             read_file = open_file.read()
             if file == 'nav.xhtml':
                 print("nav.xhtml skipped")
                 continue
             else:
-                for i in range(0,5):
+                for i in range(0, 6):
                     try:
                         regex = re.compile(toBeReplaced[i])
                         read_file = regex.sub(replacewith[i], read_file)
-                        write_file = open(file,'w',encoding='utf-8')
+                        write_file = open(file, 'w', encoding='utf-8')
                         write_file.write(read_file)
                     except:
                         # print("exception occurred.")
                         messagebox.showinfo("Error", "Exception occurred")
-        print ("processed ", file)              
+        print ("processed ", file)
     # code exit logic.
     messagebox.showinfo("Processed", "Files Processed")
 
 
 if __name__ == "__main__":
     Label(win, text="Enter OPS path").pack()  #label
-    Entry(win, textvariable = mystring,width=50).pack() #textblock
+    Entry(win, textvariable = mystring, width=50).pack() #textblock
     button = Button(win, text="Proceed", command=getValue) #button
     button.pack()
     win.geometry("600x300+500+250")

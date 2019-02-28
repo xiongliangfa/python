@@ -7,6 +7,7 @@ from tkinter import messagebox
 import tkinter as tk
 
 # global deceleration
+sox = 'C:/Program Files (x86)/sox-14-4-2/sox.exe'
 file_list = []
 win = Tk()
 win.title('Audio Merge tool V2.1 - HMH')
@@ -46,6 +47,7 @@ def SpeechToText(audioName,k):
 
 # adding files to array
 def addToArray(filePath):
+    file_list.clear()
     directory = os.listdir(filePath)
     os.chdir(filePath)
     for file in directory:
@@ -68,27 +70,44 @@ def addSilence(aud1):
 
 # mp3 to wav function
 def toWav(filePath):
-    pass
+    for i in range(0,len(file_list)):
+        audioName = os.path.splitext(file_list[i])[0]
+        if not file_list[i] == 'process':
+            infile = filePath + '\\' + audioName + '.mp3'
+            outfile = filePath + '\\process\\' + audioName + '.wav'
+            extra = '--rate 16k --bits 16 --channels 1'
+            command = """{0} "{1}" {2} "{3}" """.format(sox,infile,extra,outfile)
+            subprocess.call(command)
 
 # wav to mp3 function
 def tomp3(filePath):
-    pass
+    for i in range(0,len(file_list)):
+        if not file_list[i] == 'silence' or file_list[i] == 'log.txt':
+            audioName = os.path.splitext(file_list[i])[0]
+            infile = filePath + '\\process\\' + audioName + '.wav'
+            outfile = filePath + '\\' + audioName + '.mp3'
+            command = """{0} "{1}" "{2}" """.format(sox,infile,outfile)
+            subprocess.call(command)
 
 # triggering function
 def trigger():
     filePath = mystring.get()  
     addToArray(filePath)
     toWav(filePath) #yet to be implemented
+    os.chdir(filePath + "\\process")
+    addToArray(filePath + "\\process")
     file = open('log.txt','w')
     for i in range(0,len(file_list),2):
         if not file_list[i] == 'silence':
             win.update_idletasks()
             outputAudio = SpeechToText(file_list[i],i)
-            addSilence(file_list[i])
+            #addSilence(file_list[i])
             mergeAudio(file_list[i],file_list[i+1],outputAudio)
             file.write(file_list[i] + ' + ' + file_list[i+1] +' --> ' + outputAudio + '\n')
     file.close()
+    addToArray(filePath + "\\process")
     tomp3(filePath) #yet to be implemented
+    messagebox.showinfo("Processed", "Files Processed")
 
 if __name__ == "__main__":
     audioLabel.set('Audio to be generated')
