@@ -5,6 +5,8 @@ import pydub
 from tkinter import *
 from tkinter import messagebox
 import tkinter as tk
+from tkinter.filedialog import askopenfilename
+import openpyxl
 
 # global deceleration
 sox = 'C:/Program Files (x86)/sox-14-4-2/sox.exe'
@@ -14,15 +16,30 @@ win.title('Audio Merge tool V2.1 - HMH')
 mystring = StringVar()
 audioLabel = StringVar()
 countLabel = StringVar()
+excelFile = StringVar()
+try:
+    wb_obj = openpyxl.load_workbook(excelPath.get())
+    sheet_obj = wb_obj.active
+except:
+    pass
+
+# function to return output audio name
+def audOutput(outputAudio):
+    if excelFile.get() is not None:
+        retAudio = cell.value(0,i)
+        i+=1
+    else:
+        retAudio = outputAudio
+    return retAudio
 
 #func to merge the audio
 def mergeAudio(aud1,aud2,outputAudio):
     infiles = [aud1, aud2]
-    outfile = outputAudio
+    outfile = audOutput(outputAudio)
     data= []
     for infile in infiles:
         w = wave.open(infile, 'rb')
-        data.append( [w.getparams(), w.readframes(w.getnframes())] )
+        data.append( [w.getparams(), w.readframes(w.getnframes())])
         w.close()
     output = wave.open(outfile, 'wb')
     output.setparams(data[0][0])
@@ -91,23 +108,29 @@ def tomp3(filePath):
 
 # triggering function
 def trigger():
-    filePath = mystring.get()  
-    addToArray(filePath)
-    toWav(filePath) #yet to be implemented
-    os.chdir(filePath + "\\process")
-    addToArray(filePath + "\\process")
-    file = open('log.txt','w')
-    for i in range(0,len(file_list),2):
-        if not file_list[i] == 'silence':
-            win.update_idletasks()
-            outputAudio = SpeechToText(file_list[i],i)
-            #addSilence(file_list[i])
-            mergeAudio(file_list[i],file_list[i+1],outputAudio)
-            file.write(file_list[i] + ' + ' + file_list[i+1] +' --> ' + outputAudio + '\n')
-    file.close()
-    addToArray(filePath + "\\process")
-    tomp3(filePath) #yet to be implemented
-    messagebox.showinfo("Processed", "Files Processed")
+    try:
+        filePath = mystring.get()  
+        addToArray(filePath)
+        toWav(filePath)
+        os.chdir(filePath + "\\process")
+        addToArray(filePath + "\\process")
+        file = open('log.txt','w')
+        for i in range(0,len(file_list),2):
+            if not file_list[i] == 'silence':
+                win.update_idletasks()
+                outputAudio = SpeechToText(file_list[i],i)
+                # addSilence(file_list[i])
+                mergeAudio(file_list[i],file_list[i+1],outputAudio)
+                file.write(file_list[i] + ' + ' + file_list[i+1] + ' --> ' + outputAudio + '\n')
+        file.close()
+        addToArray(filePath + "\\process")
+        tomp3(filePath)
+        messagebox.showinfo("Processed", "Files Processed")
+
+# fetchfile
+def fetchExcel():
+    fileExcel = askopenfilename()
+    excelFile.set(fileExcel)
 
 if __name__ == "__main__":
     audioLabel.set('Audio to be generated')
@@ -115,7 +138,10 @@ if __name__ == "__main__":
     Label(win, text="").pack()  #label
     Label(win, text="Enter Audio Path", justify=LEFT).pack()  #label
     Entry(win, textvariable = mystring,width=50).pack() #textblock
-    button = Button(win, text="Proceed", command=trigger) #button
-    button.pack()
+    proceed = Button(win, text="Proceed", command=trigger) #button
+    proceed.pack()
+    Entry(win, textvariable = excelFile, width = 50).pack()
+    fetchButton = Button(win, text = "Browse", command = fetchExcel)
+    fetchButton.pack()
     win.geometry("350x150+500+250")
     win.mainloop()
