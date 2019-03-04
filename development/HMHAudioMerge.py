@@ -126,6 +126,8 @@ def trigger():
         addToArray(filePath + "\\process")
         tomp3(filePath)
         messagebox.showinfo("Processed", "Files Processed")
+    except:
+        pass
 
 # fetchfile
 def fetchExcel():
@@ -136,7 +138,7 @@ if __name__ == "__main__":
     audioLabel.set('Audio to be generated')
     countLabel.set('0')
     Label(win, text="").pack()  #label
-    Label(win, text="Enter Audio Path", justify=LEFT).pack()  #label
+    Label(win, text="Enter Audio Path", justify=LEFT).pack() #label
     Entry(win, textvariable = mystring,width=50).pack() #textblock
     proceed = Button(win, text="Proceed", command=trigger) #button
     proceed.pack()
