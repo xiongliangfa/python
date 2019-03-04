@@ -1,7 +1,6 @@
 import speech_recognition as sr
 import subprocess
 import wave,os
-import pydub
 from tkinter import *
 from tkinter import messagebox
 import tkinter as tk
@@ -17,6 +16,8 @@ mystring = StringVar()
 audioLabel = StringVar()
 countLabel = StringVar()
 excelFile = StringVar()
+i=0
+
 try:
     wb_obj = openpyxl.load_workbook(excelPath.get())
     sheet_obj = wb_obj.active
@@ -26,7 +27,9 @@ except:
 # function to return output audio name
 def audOutput(outputAudio):
     if excelFile.get() is not None:
-        retAudio = cell.value(0,i)
+        AudioFName = cell.value(0,i)
+        retAudio = AudioFName + ".wav"
+        print(i)
         i+=1
     else:
         retAudio = outputAudio
@@ -127,6 +130,7 @@ def trigger():
         tomp3(filePath)
         messagebox.showinfo("Processed", "Files Processed")
     except:
+        print("trigger: exception occured")
         pass
 
 # fetchfile
