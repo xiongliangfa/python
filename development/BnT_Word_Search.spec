@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['BnT_Word_Search.py'],
-             pathex=['D:\\PYTHON\\python\\development'],
+             pathex=['d:\\PYTHON\\python\\development'],
              binaries=[],
              datas=[],
              hiddenimports=[],

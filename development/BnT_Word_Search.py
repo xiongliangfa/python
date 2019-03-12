@@ -20,9 +20,9 @@ def getValue():
     # toBeReplaced = input('> ')
     # print('Replace: ')
     # replaceWith = input('> ')
-    toBeReplaced = ['</span></span>', '  </span>', ' </span> </span>', '  </span></span>', ' </span> </span> </span>', '-</span> </span>']
-    replacewith = ['</span> </span>', ' </span>', '</span> </span>', ' </span></span>', ' </span></span></span>', '-</span></span>']
-    print(replacewith[5])
+    toBeReplaced = ['>READ<','>CHECK MY UNDERSTANDING<','>DRAW<','>IT<','>CHECK<','>MY<','>UNDERSTANDING<','>DRAW IT<','>PROMPT<','>PLAN<','>GENRE<','>STUDY<','>GENRE STUDY<','>MAKE<','>A<','>PREDICTION<','>MAKE A PREDICTION<','>SET<','>A<','>PURPOSE<','>SET A PURPOSE<','>PERFORMANCE TASK<','>PERFORMANCE<','>TASK<','>DRAFT<','>REVISE<','>AND<','>EDIT<','>REVISE AND EDIT<','>PUBLISH<','>PREPARE TO VIEW<','>Respond To The Text<','>WRITE<','>GENRE FOCUS<']
+    replacewith = ['>Read<','>Check My Understanding<','>Draw<','>It<','>Check<','>My<','>Understanding<','>Draw It<','>Prompt<','>Plan<','>Genre<','>Study<','>Genre Study<','>Make<','>A<','>Prediction<','>Make A Prediction<','>Set<','>A<','>Purpose<','>Set A Purpose<','>Performance Task<','>Performance<','>Task<','>Draft<','>Revise<','>And<','>Edit<','>Revise And Edit<','Publish','>Prepare To View<','>Respond To The Text<','>Write<','>Genre Focus<']
+    # print(replacewith[0])
 
     # driving logic.
     for file in directory:
@@ -34,7 +34,7 @@ def getValue():
                 print("nav.xhtml skipped")
                 continue
             else:
-                for i in range(0, 6):
+                for i in range(0, len(replacewith)):
                     try:
                         regex = re.compile(toBeReplaced[i])
                         read_file = regex.sub(replacewith[i], read_file)

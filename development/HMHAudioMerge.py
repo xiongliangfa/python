@@ -16,18 +16,11 @@ mystring = StringVar()
 audioLabel = StringVar()
 countLabel = StringVar()
 excelFile = StringVar()
-i=0
-
-try:
-    wb_obj = openpyxl.load_workbook(excelPath.get())
-    sheet_obj = wb_obj.active
-except:
-    pass
 
 # function to return output audio name
 def audOutput(outputAudio):
-    if excelFile.get() is not None:
-        AudioFName = cell.value(0,i)
+    if os.path.isfile(excelFile.get()):
+        AudioFName = sheet_obj.cell(0,i).value
         retAudio = AudioFName + ".wav"
         print(i)
         i+=1
@@ -38,8 +31,8 @@ def audOutput(outputAudio):
 #func to merge the audio
 def mergeAudio(aud1,aud2,outputAudio):
     infiles = [aud1, aud2]
-    outfile = audOutput(outputAudio)
-    data= []
+    outfile = outputAudio
+    data = []
     for infile in infiles:
         w = wave.open(infile, 'rb')
         data.append( [w.getparams(), w.readframes(w.getnframes())])
@@ -58,7 +51,7 @@ def SpeechToText(audioName,k):
         audio = r.record(source)
         type(audio)
         try:
-            convertedText = r.recognize_google(audio)
+            convertedText = r.recognize_google(audio, language="en-US")
             # print(convertedText)
         except:
             convertedText = 'test' + str(k)
@@ -77,7 +70,7 @@ def addToArray(filePath):
 def addSilence(aud1):
     infiles = [aud1, 'silence\\silence.wav']
     outfile = aud1
-    data= []
+    data = []
     for infile in infiles:
         w = wave.open(infile, 'rb')
         data.append( [w.getparams(), w.readframes(w.getnframes())] )
@@ -112,17 +105,29 @@ def tomp3(filePath):
 # triggering function
 def trigger():
     try:
+        if excelFile.get() == None:
+            wb_obj = openpyxl.load_workbook(excelFile.get())
+            sheet_obj = wb_obj.active
         filePath = mystring.get()  
         addToArray(filePath)
         toWav(filePath)
         os.chdir(filePath + "\\process")
         addToArray(filePath + "\\process")
         file = open('log.txt','w')
+        
         for i in range(0,len(file_list),2):
+            k=i/2+1
             if not file_list[i] == 'silence':
                 win.update_idletasks()
-                outputAudio = SpeechToText(file_list[i],i)
                 # addSilence(file_list[i])
+                if os.path.isfile(excelFile.get()):
+                    AudioFName = sheet_obj.cell(k,1).value
+                    if not sheet.cell(k, 1).value == xlrd.empty_cell.value:
+                        outputAudio = AudioFName + ".wav"
+                    else:
+                        messagebox.showerror("Failed", "Entry in excel cannot be found.")
+                else:
+                    outputAudio = SpeechToText(file_list[i],i)
                 mergeAudio(file_list[i],file_list[i+1],outputAudio)
                 file.write(file_list[i] + ' + ' + file_list[i+1] + ' --> ' + outputAudio + '\n')
         file.close()
@@ -130,13 +135,14 @@ def trigger():
         tomp3(filePath)
         messagebox.showinfo("Processed", "Files Processed")
     except:
-        print("trigger: exception occured")
+        messagebox.showerror("Failed", "Process Failed")
         pass
 
 # fetchfile
 def fetchExcel():
     fileExcel = askopenfilename()
     excelFile.set(fileExcel)
+    return fileExcel
 
 if __name__ == "__main__":
     audioLabel.set('Audio to be generated')
